@@ -1,0 +1,9 @@
+{% extends "bio/header.html" %}
+
+{% block content %}
+<!--html is blind to whitespace, need to end statements; for and if etc.-->
+    {% for c in content %}
+        <p> {{c}} </p>
+    {% endfor %}
+
+{% endblock %}
