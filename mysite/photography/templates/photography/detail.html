@@ -1,0 +1,8 @@
+{% extends "bio/header.html" %}
+
+{% block content %}
+    <img src="{{img.url}}" alt="{{img.title}}">
+    <h3> {{img.title}} </h3>
+    <h4> {{img.description}} </h4>
+    {{post.body|safe|linebreaks}}
+{% endblock %}
